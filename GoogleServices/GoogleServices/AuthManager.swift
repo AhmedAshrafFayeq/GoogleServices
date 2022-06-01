@@ -21,13 +21,21 @@ class AuthManager {
                 completion(false)
                 return
             }
-            
             print("Account created successfuly!")
             completion(true)
             
         }
-        
-        
-        
+    }
+    
+    func login(email: String, password: String, completion: @escaping (Bool) -> (Void)) {
+        auth.signIn(withEmail: email, password: password) { result, error in
+            guard result != nil && error == nil else {
+                completion(false)
+                return
+            }
+            print("login success")
+            completion(true)
+            
+        }
     }
 }
