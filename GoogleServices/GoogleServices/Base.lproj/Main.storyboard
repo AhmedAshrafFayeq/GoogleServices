@@ -1,24 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Registration View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RegistrationViewController" customModule="GoogleServices" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P6B-6w-8Y6">
+                                <rect key="frame" x="20" y="270.5" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="confirm password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ktW-Ko-a5z">
+                                <rect key="frame" x="20" y="368.5" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L4x-MI-fBk">
+                                <rect key="frame" x="168.5" y="437.5" width="77.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Register"/>
+                                <connections>
+                                    <action selector="didTapRegister:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Uw-d8-KNZ"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="34L-pZ-i54">
+                                <rect key="frame" x="20" y="319.5" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="34L-pZ-i54" firstAttribute="leading" secondItem="P6B-6w-8Y6" secondAttribute="leading" id="46o-K5-7mb"/>
+                            <constraint firstItem="L4x-MI-fBk" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="4Kz-qq-q4G"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="P6B-6w-8Y6" secondAttribute="trailing" constant="20" id="7P0-cx-N9a"/>
+                            <constraint firstItem="34L-pZ-i54" firstAttribute="top" secondItem="P6B-6w-8Y6" secondAttribute="bottom" constant="15" id="Alo-ja-DUp"/>
+                            <constraint firstItem="L4x-MI-fBk" firstAttribute="top" secondItem="ktW-Ko-a5z" secondAttribute="bottom" constant="35" id="NHq-TT-w0I"/>
+                            <constraint firstItem="ktW-Ko-a5z" firstAttribute="trailing" secondItem="P6B-6w-8Y6" secondAttribute="trailing" id="TIf-ad-5I9"/>
+                            <constraint firstItem="34L-pZ-i54" firstAttribute="trailing" secondItem="P6B-6w-8Y6" secondAttribute="trailing" id="bWD-nm-iFi"/>
+                            <constraint firstItem="L4x-MI-fBk" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hQl-sT-3Tv"/>
+                            <constraint firstItem="ktW-Ko-a5z" firstAttribute="leading" secondItem="P6B-6w-8Y6" secondAttribute="leading" id="jWb-ss-RvO"/>
+                            <constraint firstItem="ktW-Ko-a5z" firstAttribute="top" secondItem="34L-pZ-i54" secondAttribute="bottom" constant="15" id="mav-yb-rXd"/>
+                            <constraint firstItem="P6B-6w-8Y6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xhA-sj-qwq"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="confirmPasswordTextField" destination="ktW-Ko-a5z" id="4bR-Cr-LAH"/>
+                        <outlet property="emailTextField" destination="P6B-6w-8Y6" id="4pH-Wu-DJY"/>
+                        <outlet property="passwordTextField" destination="34L-pZ-i54" id="mWO-NQ-eYE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139" y="119"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
