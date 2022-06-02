@@ -39,7 +39,10 @@ class AuthManager {
             }
             print("login success")
             completion(true)
-            
+            DataBaseManager.shared.downloadUserDataFromFirestore(userID: result?.user.uid ?? "") { name, age in
+                print(name)
+                print(age)
+            }
         }
     }
 }

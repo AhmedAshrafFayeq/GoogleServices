@@ -72,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				2D08078E28482AD700080CCB /* AuthManager.swift */,
+				2D0807922848F7EF00080CCB /* DataBaseManager.swift */,
 				2D0807762847FBF300080CCB /* AppDelegate.swift */,
 				2D0807782847FBF300080CCB /* SceneDelegate.swift */,
 				2D08078C2848293800080CCB /* RegistrationViewController.swift */,
@@ -81,7 +82,6 @@
 				2D08077F2847FBF700080CCB /* Assets.xcassets */,
 				2D0807812847FBF700080CCB /* LaunchScreen.storyboard */,
 				2D0807842847FBF700080CCB /* Info.plist */,
-				2D0807922848F7EF00080CCB /* DataBaseManager.swift */,
 			);
 			path = GoogleServices;
 			sourceTree = "<group>";

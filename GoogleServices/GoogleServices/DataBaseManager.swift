@@ -27,4 +27,16 @@ class DataBaseManager {
             completion(error == nil)            
         }
     }
+    
+    func downloadUserDataFromFirestore(userID: String, completion: @escaping (_ name: String?, _ age: Int?)-> Void) {
+        database.collection("Users").document(userID).getDocument { snapshot, error in
+            guard let document = snapshot?.data(), error == nil else {
+                print("couldn't load data")
+                return
+            }
+            let name = document["username"] as? String
+            let age = document["age"] as? Int
+            completion(name, age)
+        }
+    }
 }
