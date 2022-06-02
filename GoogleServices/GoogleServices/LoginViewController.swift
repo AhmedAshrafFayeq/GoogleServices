@@ -28,4 +28,7 @@ class LoginViewController: UIViewController {
             }
         }
     }
+    @IBAction func didTapRegister(_ sender: Any) {
+        
+    }
 }

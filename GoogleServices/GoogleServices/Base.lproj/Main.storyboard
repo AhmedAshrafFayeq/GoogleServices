@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ctd-gR-O6K">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -11,7 +11,7 @@
         <!--Registration View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="RegistrationViewController" customModule="GoogleServices" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegistrationViewController" id="BYZ-38-t0r" customClass="RegistrationViewController" customModule="GoogleServices" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -93,16 +93,26 @@
                                     <action selector="didTapRegister:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lqp-yN-tpg"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycV-E4-VLV">
+                                <rect key="frame" x="20" y="410" width="98" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="registration"/>
+                                <connections>
+                                    <action selector="didTapRegister:" destination="ctd-gR-O6K" eventType="touchUpInside" id="4q6-JG-zVN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3gN-3h-bBl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="51S-OK-uyK" firstAttribute="trailing" secondItem="43Q-Tj-QsP" secondAttribute="trailing" id="3n8-bA-feL"/>
                             <constraint firstItem="3gN-3h-bBl" firstAttribute="trailing" secondItem="43Q-Tj-QsP" secondAttribute="trailing" constant="20" id="7KH-wo-Zby"/>
+                            <constraint firstItem="ycV-E4-VLV" firstAttribute="leading" secondItem="43Q-Tj-QsP" secondAttribute="leading" id="Ig6-3f-gF9"/>
                             <constraint firstItem="51S-OK-uyK" firstAttribute="leading" secondItem="43Q-Tj-QsP" secondAttribute="leading" id="OKy-2f-qqq"/>
                             <constraint firstItem="9K1-5g-H8t" firstAttribute="centerY" secondItem="3gN-3h-bBl" secondAttribute="centerY" id="caK-cm-e3r"/>
                             <constraint firstItem="9K1-5g-H8t" firstAttribute="top" secondItem="43Q-Tj-QsP" secondAttribute="bottom" constant="52.5" id="iHN-fY-bWy"/>
                             <constraint firstItem="43Q-Tj-QsP" firstAttribute="top" secondItem="51S-OK-uyK" secondAttribute="bottom" constant="20" id="k2t-cO-8Lf"/>
+                            <constraint firstItem="ycV-E4-VLV" firstAttribute="top" secondItem="43Q-Tj-QsP" secondAttribute="bottom" constant="25" id="nR3-d7-wmY"/>
                             <constraint firstItem="9K1-5g-H8t" firstAttribute="centerX" secondItem="3gN-3h-bBl" secondAttribute="centerX" id="nSH-3D-02K"/>
                             <constraint firstItem="43Q-Tj-QsP" firstAttribute="leading" secondItem="3gN-3h-bBl" secondAttribute="leading" constant="20" id="tFt-hu-w44"/>
                         </constraints>

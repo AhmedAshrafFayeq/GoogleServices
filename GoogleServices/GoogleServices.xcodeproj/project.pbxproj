@@ -16,6 +16,7 @@
 		2D08078D2848293800080CCB /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D08078C2848293800080CCB /* RegistrationViewController.swift */; };
 		2D08078F28482AD700080CCB /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D08078E28482AD700080CCB /* AuthManager.swift */; };
 		2D080791284831B600080CCB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D080790284831B600080CCB /* LoginViewController.swift */; };
+		2D0807932848F7EF00080CCB /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0807922848F7EF00080CCB /* DataBaseManager.swift */; };
 		365A4B6501FDF2F31A7E6B4E /* Pods_GoogleServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4D71E8DFA381A80CA11654A /* Pods_GoogleServices.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		2D08078C2848293800080CCB /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		2D08078E28482AD700080CCB /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		2D080790284831B600080CCB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2D0807922848F7EF00080CCB /* DataBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
 		722F3209D6C6CFB5F7B7697D /* Pods-GoogleServices.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleServices.debug.xcconfig"; path = "Target Support Files/Pods-GoogleServices/Pods-GoogleServices.debug.xcconfig"; sourceTree = "<group>"; };
 		A8D4D6003D37DE7F71825417 /* Pods-GoogleServices.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleServices.release.xcconfig"; path = "Target Support Files/Pods-GoogleServices/Pods-GoogleServices.release.xcconfig"; sourceTree = "<group>"; };
 		C4D71E8DFA381A80CA11654A /* Pods_GoogleServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +81,7 @@
 				2D08077F2847FBF700080CCB /* Assets.xcassets */,
 				2D0807812847FBF700080CCB /* LaunchScreen.storyboard */,
 				2D0807842847FBF700080CCB /* Info.plist */,
+				2D0807922848F7EF00080CCB /* DataBaseManager.swift */,
 			);
 			path = GoogleServices;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				2D08078D2848293800080CCB /* RegistrationViewController.swift in Sources */,
 				2D0807792847FBF300080CCB /* SceneDelegate.swift in Sources */,
 				2D080791284831B600080CCB /* LoginViewController.swift in Sources */,
+				2D0807932848F7EF00080CCB /* DataBaseManager.swift in Sources */,
 				2D08078F28482AD700080CCB /* AuthManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

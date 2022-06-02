@@ -22,11 +22,15 @@ class AuthManager {
                 return
             }
             print("Account created successfuly!")
+            guard let user = result?.user else { return }
+            DataBaseManager.shared.saveUserDataToFireStore(userID: user.uid, username: "ahmeeed", age: 25) { isSuccess in
+                print("user data is saved in Database")
+            }
             completion(true)
             
         }
     }
-    
+
     func login(email: String, password: String, completion: @escaping (Bool) -> (Void)) {
         auth.signIn(withEmail: email, password: password) { result, error in
             guard result != nil && error == nil else {
